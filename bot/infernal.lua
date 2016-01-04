@@ -226,140 +226,55 @@ function create_config( )
     moderation = {data = 'data/moderation.json'},
     about_text = [[infernal bot v1.3
  sudouser : @Arashinfernal
- The inter Security TEAM😱
+ The Security TEAM😱
 INFERNAL™
 〰〰〰〰〰〰〰〰〰〰〰〰
-Leader : @ArashINFERNAL
-moderator : @Shahabsaf 
-moderator : @creed_is_dead 
-moderator : @Mustafaflux 
-moderator : @Parham_mrbot 
-〰〰〰〰〰〰〰〰〰〰〰〰
-Member : @NXT_Sudo 
-Member : @Arash_admin_dragon 
-Member : @lord_hpr 
-Member : @ali_ghoghnoos
-Member : @Minaco
-Member : @DrRampy
-Member : @ThisIsArman
-Member : @digitalboys
+Admins :
+@digitalboys [founder]
+@Arashinfernal [Developer]
+@Creed_is_dead [Manager]
+@MustafaFLux [Globaladmin]
 
 Our channels
 @INFERNALTEAM [persian]
-@INFERNALCHANNE: [persian]
+@INFERNALCHANNEl : [persian]
 ]],
     help_text = [[
-Infernals Help TxT : 😈
-Plugins : 🔻
-
-1. banhammer ⭕️
-Help For Banhammer👇
-
-!Kick @UserName 😜
-
-And You Can do It by Replay 🙈
-!Ban @UserName 〽️
-You Can Do It By Replay👌
-
-!Unban @UserName
-You Can Do it By Replay😱
-
-For Admins : 👇
-!banall @UserName or (user_id)😺
-you Can do it By Replay 👤
-
-!unbanall 🆔User_Id🆔
-〰〰〰〰〰〰〰〰〰〰
-2. GroupManager :🔹
-
-!Creategroup "GroupName" 🙈
-You Can CreateGroup With this command😱
-
-!lock member 😋
-You Can lock Your Group Members 🔻
-
-!lock bots 🔹
-No bots can come in Your gp 🕶
-
-!lock name ❤️
-no one can change your gpname💍
-
-!setflood😃
-Set the group flood control🈹
-
-!settings ❌
-Watch group settings
-
-!owner🚫
-watch group owner
-
-!setowner user_id❗️
-You can set someone to the group owner‼️
-
-!modlist💯
-watch Group mods🔆
-
-!lock flood⚠️
-lock group flood🔰
-
-!unlock (bots-member-flood-photo-name-Arabic)✅
-Unlock Something🚼
-
-!rules 🆙 or !set rules🆗
-watch group rules or set
-!about or !set about 🔴
-!res @username🔘
-See UserInfo©
-
-!who♦️
-Get Ids Chat🔺
-
-!log 🎴
-get members id ♠️
-
-!all🔴
-this is like stats in a file🔸
-added !clink *
-and !glink :)
-〰〰〰〰〰〰〰〰
-Admins :®
-!add 😎
-You Can add the group to moderation.json😱
-
-!rem😏
-You Can Remove the group from mod.json⭕️
-
-!setgpowner (Gpid) user_id ⚫️
-from realm®®
-
-!addadmin 🔶
-set some one to global admin🔸
-
-!removeadmin🔘
-remove somone from global admin🔹
-〰〰〰〰〰〰〰〰〰〰〰
-3. Stats :©
-!stats infernal (sudoers)✔️
-shows bt stats🔚
-
-!infernalteam☑️
-shows about our team🎶
-
-!stats🔘
-shows group stats💲
-〰〰〰〰〰〰〰〰
-4. Feedback⚫️
-!feedback txt🔻◼️
-send maseage to admins via bot🔈
-〰〰〰〰〰〰〰〰〰〰〰
-5. Tagall◻️
-!tagall txt🔸
-will tag users©
-〰〰〰〰〰〰〰〰〰
-more plugins soon™
-Our team✔️iNFERNAL➰
-our channel : @INFERNALCHANNEL & @INFERNALTEAM🔋
-You Can user both "!" & "/" for them🎧
+ابزار های اینفرنال :
+Tools For Infernal :
+〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰
+#1> Auto_Leave
+#2> Banhammer
+#3> Gp_Moderator
+#4> Vote
+#5> Plugins
+#6> Kickall
+#7> Inrealm
+#8> set
+#9> all
+#10> inpm
+#11> GPS 
+#12 > broadcast
+#13> get
+#14> invite
+#15> owners
+#16> onservice
+#17> Echo
+#18> Boobs
+#19> Calculator
+#20> Block
+#21> Bin
+#22> Location
+#23> Sms
+#24> LinkPv
+#25> Arabic_lock
+#26> inv
+#27> Version
+#28> LockTag
+#29> Lyrics
+For getting a description of the bot send Ver.'
+Sudo : @ArashInfernal .'
+Channel : @InfernalChannel .'
 ]]
 
   }
