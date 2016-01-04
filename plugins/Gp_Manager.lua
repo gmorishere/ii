@@ -220,7 +220,7 @@ local function unlock_group_namemod(msg, data, target)
 end
 local function lock_group_floodmod(msg, data, target)
   if not is_owner(msg) then
-    return "Only admins can do it for now"
+    return "Only global admins can do it for now"
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'yes' then
@@ -234,7 +234,7 @@ end
 
 local function unlock_group_floodmod(msg, data, target)
   if not is_owner(msg) then
-    return "Only admins can do it for now"
+    return "Only global admins can do it for now"
   end
   local group_flood_lock = data[tostring(target)]['settings']['flood']
   if group_flood_lock == 'no' then
@@ -300,7 +300,7 @@ end
 local function modadd(msg)
   -- superuser and admins only (because sudo are always has privilege)
   if not is_admin(msg) then
-    return "You're not admin"
+    return "You're  not global admin besiiiik"
   end
   local data = load_data(_config.moderation.data)
   if data[tostring(msg.to.id)] then
@@ -312,7 +312,7 @@ end
 local function modrem(msg)
   -- superuser and admins only (because sudo are always has privilege)
   if not is_admin(msg) then
-    return "You're not admin Besik"
+    return "You're not Global admin Besik"
   end
   local data = load_data(_config.moderation.data)
   if not data[tostring(msg.to.id)] then
@@ -729,7 +729,7 @@ local function run(msg, matches)
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] revoked group link ")
       return export_chat_link(receiver, callback, true)
     end
-    if matches[1] == 'glink' then
+    if matches[1] == 'getlink' then
       if not is_momod(msg) then
         return "For moderators only!"
       end
@@ -859,7 +859,7 @@ return {
   "^[!/](settings)$",
   "^[!/](modlist)$",
   "^[!/](clink)$",
-  "^[!/](glink)$",
+  "^[!/](getlink)$",
   "%[(photo)%]",
   "^!!tgservice (.+)$",
   },
