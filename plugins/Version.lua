@@ -13,7 +13,7 @@ for 3 month 😱
 admins :
 @creed_is_dead 
 @Mustafaflux
-@
+@digitalboys
 for global admin : 30 tommans for 2 month🙈
 or 15 tomans each month😝
 The Will open source soon
