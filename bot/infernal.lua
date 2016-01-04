@@ -206,7 +206,7 @@ function create_config( )
     enabled_plugins = {
     "onservice",
     "inrealm",
-    "Moderator_Gp",
+    "Gp_Manager",
     "LockTag",
     "banhammer",
     "stats",
@@ -253,7 +253,7 @@ Tools For Infernal :
 〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰
 #1> Auto_Leave
 #2> Banhammer
-#3> Gp_Moderator
+#3> Gp_Manager
 #4> Vote
 #5> Plugins
 #6> Kickall
