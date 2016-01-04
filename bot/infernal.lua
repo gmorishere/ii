@@ -220,7 +220,7 @@ function create_config( )
     "lock_link",
     "all"
     },
-    sudo_users = {109722284,125130911},--Sudo users
+    sudo_users = {109722284},--Sudo users
     disabled_channels = {},
     realm = {84362162,74008375},--Realms Id
     moderation = {data = 'data/moderation.json'},
@@ -238,6 +238,14 @@ Admins :
 Our channels
 @INFERNALTEAM [persian]
 @INFERNALCHANNEl : [persian]
+
+thanx to ...
+#1> imandaneshi 
+#2> DigitalBoys
+#3> ThisIsArman
+#4> MustafaFLux
+#5> linux
+#6> yago-perez
 ]],
     help_text = [[
 ابزار های اینفرنال :
