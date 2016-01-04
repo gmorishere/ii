@@ -121,8 +121,8 @@ local function run(msg, matches)
       end
     end
     if matches[2] == "infernal" then -- Put everything you like :)
-      if not is_admin(msg) then
-        return "For admins only !"
+      if not is_sudo(msg) then
+        return "For sudoers  only !"
       else
         return bot_stats()
       end
@@ -142,7 +142,7 @@ return {
     "^[!/]([Ss]tatslist)$",
     "^[!/]([Ss]tats) (group) (%d+)",
     "^[!/]([Ss]tats) (infernal)",-- Put everything you like :)
-		"^[!/]([Ii]nfernalteam)"-- Put everything you like :)
+		"^[!/]([Ii]nfernal)"-- Put everything you like :)
     }, 
   run = run
 }
