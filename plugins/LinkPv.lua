@@ -712,7 +712,7 @@ local function run(msg, matches)
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group settings ")
       return show_group_settingsmod(msg, data, target)
     end
-    if matches[1] == 'newlink' then
+    if matches[1] == 'clink' then
       if not is_momod(msg) then
         return "For moderators only!"
       end
@@ -729,13 +729,13 @@ local function run(msg, matches)
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] revoked group link ")
       return export_chat_link(receiver, callback, true)
     end
-    if matches[1] == 'linkpv' then
+    if matches[1] == 'private' then
       if not is_momod(msg) then
         return "For moderators only!"
       end
       local group_link = data[tostring(msg.to.id)]['settings']['set_link']
       if not group_link then 
-        return "Create a link using /newlink first !"
+        return "Create a link using /clink first !"
       end
        savelog(msg.to.id, name_log.." ["..msg.from.id.."] requested group link ["..group_link.."]")
      send_large_msg('user#id'..msg.from.id, "Group link:\n"..group_link)
@@ -838,7 +838,7 @@ local function run(msg, matches)
 end
 return {
   patterns = {
-  "^[!/](linkpv)$",
+  "^[!/](private)$",
   "%[(photo)%]",
   "^!!tgservice (.+)$",
   },
