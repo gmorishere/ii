@@ -204,7 +204,7 @@ local function admin_promote(msg, admin_id)
         end
         data[tostring(admins)][tostring(admin_id)] = admin_id
         save_data(_config.moderation.data, data)
-        return admin_id..' has been promoted as admin.'
+        return admin_id..' has been promoted as Global  admin.'
 end
 local function admin_demote(msg, admin_id)
     if not is_sudo(msg) then
@@ -217,11 +217,11 @@ local function admin_demote(msg, admin_id)
                 save_data(_config.moderation.data, data)
         end
         if not data[tostring(admins)][tostring(admin_id)] then
-                return admin_id..' is not an admin.'
+                return admin_id..' is not an Global admin.'
         end
         data[tostring(admins)][tostring(admin_id)] = nil
         save_data(_config.moderation.data, data)
-        return admin_id..' has been demoted from admin.'
+        return admin_id..' has been demoted from Global admin.'
 end
  
 local function admin_list(msg)
@@ -231,9 +231,9 @@ local function admin_list(msg)
         data[tostring(admins)] = {}
         save_data(_config.moderation.data, data)
         end
-        local message = 'List for Realm admins:\n'
+        local message = 'List of Global admins For Infernal:👤\n'
         for k,v in pairs(data[tostring(admins)]) do
-                message = message .. '- (Infernal)' .. v .. ' [' .. k .. '] ' ..'\n'
+                message = message .. '- 👥(Infernal)' .. v .. ' [' .. k .. '] ' ..'\n'
         end
         return message
 end
@@ -275,11 +275,11 @@ local function admin_user_promote(receiver, member_username, member_id)
                 save_data(_config.moderation.data, data)
         end
         if data['admins'][tostring(member_id)] then
-                return send_large_msg(receiver, member_username..' is already as admin.')
+                return send_large_msg(receiver, member_username..' is already as Global admin.')
         end
         data['admins'][tostring(member_id)] = member_username
         save_data(_config.moderation.data, data)
-        return send_large_msg(receiver, '@'..member_username..' has been promoted as admin.')
+        return send_large_msg(receiver, '@'..member_username..' has been promoted as Global admin.')
 end
  
 local function admin_user_demote(receiver, member_username, member_id)
@@ -289,7 +289,7 @@ local function admin_user_demote(receiver, member_username, member_id)
                 save_data(_config.moderation.data, data)
         end
         if not data['admins'][tostring(member_id)] then
-                return send_large_msg(receiver, member_username..' is not an admin.')
+                return send_large_msg(receiver, member_username..' is not an Global admin.')
         end
         data['admins'][tostring(member_id)] = nil
         save_data(_config.moderation.data, data)
@@ -306,9 +306,9 @@ local function username_id(cb_extra, success, result)
       if vusername == member then
         member_username = member
         member_id = v.id
-        if mod_cmd == 'gadminprom' then
+        if mod_cmd == 'Globaldminprom' then
             return admin_user_promote(receiver, member_username, member_id)
-        elseif mod_cmd == 'gadmindem' then
+        elseif mod_cmd == 'Globaladmindem' then
             return admin_user_demote(receiver, member_username, member_id)
         end
       end
@@ -414,29 +414,29 @@ chat_info(receiver, returnids, {receiver=receiver})
 				chat_del_user(chat, user, ok_cb, true)
 			end
 		end
-		if matches[1] == 'gadminprom' then
+		if matches[1] == 'Globaladminprom' then
 			if string.match(matches[2], '^%d+$') then
 				local admin_id = matches[2]
-				print("user "..admin_id.." has been promoted as admin")
+				print("user "..admin_id.." has been promoted as Global admin")
 				return admin_promote(msg, admin_id)
 			else
 			local member = string.gsub(matches[2], "@", "")
-				local mod_cmd = "gadminprom"
+				local mod_cmd = "Globaladminprom"
 				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
 			end
 		end
-		if matches[1] == 'gadmindem' then
+		if matches[1] == 'Globaladmindem' then
 			if string.match(matches[2], '^%d+$') then
 				local admin_id = matches[2]
 				print("user "..admin_id.." has been demoted")
 				return admin_demote(msg, admin_id)
 			else
 			local member = string.gsub(matches[2], "@", "")
-				local mod_cmd = "gadmindem"
+				local mod_cmd = "Globaladmindem"
 				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
 			end
 		end
-		if matches[1] == 'list' and matches[2] == 'admins' then
+		if matches[1] == 'list' and matches[2] == 'Globaladmins' then
 			return admin_list(msg)
 		end
 		if matches[1] == 'list' and matches[2] == 'groups' then
@@ -457,8 +457,8 @@ return {
     "^[!/](setting) (%d+)$",
         "^[!/](wholist)$",
         "^[!/](who)$",
-    "^[!/](gadminprom) (.*)$", -- sudoers only
-    "^[!/](gadmindem) (.*)$", -- sudoers only
+    "^[!/](GLobaladminprom) (.*)$", -- sudoers only
+    "^[!/](Globaladmindem) (.*)$", -- sudoers only
     "^[!/](list) (.*)$",
         "^[!/](log)$",
         "^!!tgservice (.+)$",
