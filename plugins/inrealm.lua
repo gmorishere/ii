@@ -306,9 +306,9 @@ local function username_id(cb_extra, success, result)
       if vusername == member then
         member_username = member
         member_id = v.id
-        if mod_cmd == 'Globaldminprom' then
+        if mod_cmd == 'adminpromote' then
             return admin_user_promote(receiver, member_username, member_id)
-        elseif mod_cmd == 'Globaladmindem' then
+        elseif mod_cmd == 'admindemote' then
             return admin_user_demote(receiver, member_username, member_id)
         end
       end
@@ -414,29 +414,29 @@ chat_info(receiver, returnids, {receiver=receiver})
 				chat_del_user(chat, user, ok_cb, true)
 			end
 		end
-		if matches[1] == 'Globaladminprom' then
+		if matches[1] == 'adminpromote' then
 			if string.match(matches[2], '^%d+$') then
 				local admin_id = matches[2]
 				print("user "..admin_id.." has been promoted as Global admin")
 				return admin_promote(msg, admin_id)
 			else
 			local member = string.gsub(matches[2], "@", "")
-				local mod_cmd = "Globaladminprom"
+				local mod_cmd = "adminpromote"
 				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
 			end
 		end
-		if matches[1] == 'Globaladmindem' then
+		if matches[1] == 'admindemote' then
 			if string.match(matches[2], '^%d+$') then
 				local admin_id = matches[2]
 				print("user "..admin_id.." has been demoted")
 				return admin_demote(msg, admin_id)
 			else
 			local member = string.gsub(matches[2], "@", "")
-				local mod_cmd = "Globaladmindem"
+				local mod_cmd = "admindemote"
 				chat_info(receiver, username_id, {mod_cmd= mod_cmd, receiver=receiver, member=member})
 			end
 		end
-		if matches[1] == 'list' and matches[2] == 'Globaladmins' then
+		if matches[1] == 'list' and matches[2] == 'admins' then
 			return admin_list(msg)
 		end
 		if matches[1] == 'list' and matches[2] == 'groups' then
@@ -457,8 +457,8 @@ return {
     "^[!/](setting) (%d+)$",
         "^[!/](wholist)$",
         "^[!/](who)$",
-    "^[!/](GLobaladminprom) (.*)$", -- sudoers only
-    "^[!/](Globaladmindem) (.*)$", -- sudoers only
+    "^[!/](adminpromote) (.*)$", -- sudoers only
+    "^[!/](admindemote) (.*)$", -- sudoers only
     "^[!/](list) (.*)$",
         "^[!/](log)$",
         "^!!tgservice (.+)$",
