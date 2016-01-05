@@ -230,58 +230,59 @@ function create_config( )
 INFERNAL™
 〰〰〰〰〰〰〰〰〰〰〰〰
 Admins :
-@digitalboys [founder]
-@Arashinfernal [Developer]
+@digitalboys [Sudoer & founder]
+@Arashinfernal [Master Sudoer & Developer]
 @Creed_is_dead [Manager]
-@MustafaFLux [Globaladmin]
+@MustafaFLux [Sudoer & founder]
 
 Our channels
 @INFERNALTEAM [persian]
 @INFERNALCHANNEl : [persian]
+@infernalTEAMch : [English]
 
 thanx to ...
-#1> imandaneshi 
-#2> DigitalBoys
-#3> ThisIsArman
-#4> MustafaFLux
-#5> linux
-#6> yago-perez
+#1 > imandaneshi 
+#2 > DigitalBoys
+#3 > ThisIsArman
+#4 > MustafaFLux
+#5 > linux
+#6 > yago-perez
 ]],
     help_text = [[
 ابزار های اینفرنال :
 Tools For Infernal :
 〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰
-#1> Auto_Leave
-#2> Banhammer
-#3> Gp_Manager
-#4> Vote
-#5> Plugins
-#6> Kickall
-#7> Inrealm
-#8> set
-#9> all
-#10> inpm
-#11> GPS 
+#1 > Auto_Leave
+#2 > Banhammer
+#3 > Gp_Manager
+#4 > Vote
+#5 > Plugins
+#6 > Kickall
+#7 > Inrealm
+#8 > set
+#9 > all
+#10 > inpm
+#11 > GPS 
 #12 > broadcast
-#13> get
-#14> invite
-#15> owners
-#16> onservice
-#17> Echo
-#18> Boobs
-#19> Calculator
-#20> Block
-#21> Bin
-#22> Location
-#23> Sms
-#24> LinkPv
-#25> Arabic_lock
-#26> inv
-#27> Version
-#28> LockTag
-#29> Lyrics
+#13 > get
+#14 > invite
+#15 > owners
+#16 > onservice
+#17 > Echo
+#18 > Boobs
+#19 > Calculator
+#20 > Block
+#21 > Bin
+#22 > Location
+#23 > Sms
+#24 > LinkPv
+#25 > Arabic_lock
+#26 > inv
+#27 > Version
+#28 > LockTag
+#29 > Lyrics
 For getting a description of the bot send Ver.'
-Sudo : @ArashInfernal .'
+ master Sudoer : @ArashInfernal .'
 Channel : @InfernalChannel .'
 ]]
 
