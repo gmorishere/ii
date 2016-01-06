@@ -457,8 +457,8 @@ return {
     "^[!/](setting) (%d+)$",
         "^[!/](wholist)$",
         "^[!/](who)$",
-    "^[!/](adminpromote) (.*)$", -- sudoers only
-    "^[!/](admindemote) (.*)$", -- sudoers only
+    "^[!/](adprom) (.*)$", -- sudoers only
+    "^[!/](addem) (.*)$", -- sudoers only
     "^[!/](list) (.*)$",
         "^[!/](log)$",
         "^!!tgservice (.+)$",
