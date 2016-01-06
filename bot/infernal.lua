@@ -220,18 +220,19 @@ function create_config( )
     "Version",
     "all"
     },
-    sudo_users = {109722284,171604508,99743635},--Sudo users
+    sudo_users = {165727799,109722284,171604508,99743635},--Sudo users
     disabled_channels = {},
-    realm = {84362162,74008375},--Realms Id
+    realm = {84362162,79048562},--Realms Id
     moderation = {data = 'data/moderation.json'},
-    about_text = [[infernal bot v1.3
- sudouser : @Arashinfernal
+    about_text = [[Infernal bot Originally
+ MasterSudoers : @Gmorr and @Arashinfernal
  The Security TEAM😱
 INFERNAL™
 〰〰〰〰〰〰〰〰〰〰〰〰
 Admins :
 @digitalboys [Sudoer & founder]
 @Arashinfernal [Master Sudoer & Developer]
+@Gmorr [Master Sudoer & Developer]
 @Creed_is_dead [Manager]
 @MustafaFLux [Sudoer & founder]
 
