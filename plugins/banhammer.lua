@@ -262,7 +262,7 @@ local function run(msg, matches)
          return false 
         end
         banall_user(targetuser)
-        return 'User '..user_id..'  kolan gayidamesh :'
+        return 'User '..user_id..'  kolan gayidamesh kose nnsh !'
       else
         local member = string.gsub(matches[2], '@', '')
         local get_cmd = 'banallgp'
