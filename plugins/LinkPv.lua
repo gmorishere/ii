@@ -729,7 +729,7 @@ local function run(msg, matches)
       savelog(msg.to.id, name_log.." ["..msg.from.id.."] revoked group link ")
       return export_chat_link(receiver, callback, true)
     end
-    if matches[1] == 'private' then
+    if matches[1] == 'linkpv' then
       if not is_momod(msg) then
         return "For moderators only!"
       end
