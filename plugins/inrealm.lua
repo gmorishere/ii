@@ -231,9 +231,9 @@ local function admin_list(msg)
         data[tostring(admins)] = {}
         save_data(_config.moderation.data, data)
         end
-        local message = 'List of Global admins For Infernal:👤\n'
+        local message = 'List of Global admins For Infernal:👤\nMaster Sudo : @ArashInfernal  '
         for k,v in pairs(data[tostring(admins)]) do
-                message = message .. 'Master Sudo : @ArashInfernal /n - 👥(Infernal)' .. v .. ' [' .. k .. '] ' ..'\n'
+                message = message .. '- 👥(Infernal)' .. v .. ' [' .. k .. '] ' ..'\n'
         end
         return message
 end
