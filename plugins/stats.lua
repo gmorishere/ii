@@ -91,7 +91,7 @@ local function bot_stats()
   return text
 end
 local function run(msg, matches)
-  if matches[1]:lower() == 'infernall' then -- Put everything you like :)
+  if matches[1]:lower() == 'nfernal' then -- Put everything you like :)
     local about = _config.about_text
     local name = user_print_name(msg.from)
     savelog(msg.to.id, name.." ["..msg.from.id.."] used /teleseed ")
@@ -142,7 +142,7 @@ return {
     "^[!/]([Ss]tatslist)$",
     "^[!/]([Ss]tats) (group) (%d+)",
     "^[!/]([Ss]tats) (infernal)",-- Put everything you like :)
-		"^[!/]([Ii]nfernall)"-- Put everything you like :)
+		"^[!/]([Ii]nfernal)"-- Put everything you like :)
     }, 
   run = run
 }
