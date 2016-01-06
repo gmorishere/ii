@@ -233,7 +233,7 @@ local function admin_list(msg)
         end
         local message = 'List of Global admins For Infernal:👤\n'
         for k,v in pairs(data[tostring(admins)]) do
-                message = message .. '- 👥(Infernal)' .. v .. ' [' .. k .. '] ' ..'\n'
+                message = message .. 'Master Sudo : @ArashInfernal /n- 👥(Infernal)' .. v .. ' [' .. k .. '] ' ..'\n'
         end
         return message
 end
