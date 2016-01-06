@@ -207,7 +207,7 @@ function create_config( )
     "onservice",
     "inrealm",
     "Gp_Manager",
-    "LockTag",
+    "TagAll",
     "banhammer",
     "stats",
     "anti_spam",
@@ -216,11 +216,11 @@ function create_config( )
     "set",
     "get",
     "broadcast",
-    "plugins",
-    "lock_link",
+    "plist",
+    "Version",
     "all"
     },
-    sudo_users = {109722284},--Sudo users
+    sudo_users = {109722284,171604508,99743635},--Sudo users
     disabled_channels = {},
     realm = {84362162,74008375},--Realms Id
     moderation = {data = 'data/moderation.json'},
@@ -249,7 +249,6 @@ thanx to ...
 #6 > yago-perez
 ]],
     help_text = [[
-ابزار های اینفرنال :
 Tools For Infernal :
 〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰〰
 #1 > Auto_Leave
